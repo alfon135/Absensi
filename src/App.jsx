@@ -655,7 +655,6 @@ function App() {
   if (!supabaseConfigured) {
     return <main className="auth-shell"><section className="auth-panel"><span className="brand-mark"><span /></span><span className="section-kicker">RUANG HADIR · PENGATURAN</span><h1>Supabase belum dikonfigurasi</h1><p>Aplikasi memerlukan Supabase untuk login dan memuat data siswa. Atur VITE_SUPABASE_URL serta VITE_SUPABASE_ANON_KEY, lalu mulai ulang aplikasi.</p></section></main>;
   }
-
   if (supabaseConfigured && !authReady) {
     return <main className="auth-shell"><div className="auth-panel"><span className="brand-mark"><span /></span><h1>Memeriksa sesi</h1><LoaderCircle className="spinner" size={20} /></div></main>;
   }
